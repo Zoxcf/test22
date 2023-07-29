@@ -7,9 +7,11 @@ urlpatterns = [
     path('',include ('app_lesson_4.urls')),
     path('advertisment/',include("app_advertisment.urls")),
 ]
+
 """
 mysite.com/p/
 """
+
 
 
 
