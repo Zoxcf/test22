@@ -39,10 +39,10 @@ class Advertisment(models.Model):
     def created_foto(self):
         if self.image:
             return format_html(
-                '<img src = "media/{}" style = "width:166px; hight:100px;"> ',self.image
+                '<img src = "/media/{}" style = "width:100px; hight:100px;"> ',self.image
             )
         else:
             return format_html(
-                '<img src = "/static/img/adv.png" style = "width:167px; hight:100px;"> '
+                '<img src = "/static/img/adv.png" style = "width:100px; hight:100px;"> '
             )
        
