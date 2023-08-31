@@ -1,3 +1,4 @@
+from django.urls import reverse
 from django.db import models
 from django.utils.html import format_html
 from django.contrib import admin
@@ -19,6 +20,10 @@ class Advertisment(models.Model):
     class Meta:
         db_table = "Advertisment"
 
+
+    def get_absolute_url(self):
+        return reverse('advertisement_',kwargs={'pk':self.pk})
+    
     def __str__(self):
         return self.title
     

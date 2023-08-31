@@ -6,7 +6,7 @@ urlpatterns = [
     path('',index,name='/'),
     path('top-sell',top,name='top'),
     path('advertisement-post',advertisement_post,name='advertisement_post'),
-    path('advertisement_',advertisement,name='advertisement_'),
+    path('advertisement_/<int:pk>',advertisement,name='advertisement_'),
 
 ]
 
